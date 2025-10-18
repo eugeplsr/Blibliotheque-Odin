@@ -3,10 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Projet</title>
+    <title>Ma Bibliotheque</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <main>
+        <h1>Ma bibliothèque</h1>
+        <section class="mes-livres">
+            <h2>Mes livres :</h2>
+            <div class="mes-livres_cards">
+
+            </div>
+        </section>
+        <section class="ajouter-livre">
+            <dialog>
+                <form class="formulaire">
+                    <label>Nom du livre :</label>
+                        <input type="text" id="newBookTitle" name="title">
+                    <label>Auteur du livre :</label>
+                        <input type="text" id="newBookAuthor" name="author">
+                    <label>Nombre de pages :</label>
+                        <input type="number" id="newBookNumberPages" name="numberOfPages">
+                    <label>Déjà lu ?</label>
+                    <label>
+                        <input type="radio" id="newBookStatutYes" name="isRead" value="Oui" checked>Oui
+                    </label>
+                    <label>
+                        <input type="radio" id="newBookStatutNo" name="isRead" value="Non">Non
+                    </label>
+                    <input type="submit" value="Ajouter ce livre à ma bibliothèque !" />
+                </form>
+            </dialog>
+            <button class="ajouter-livre_button">Ajouter un livre</button>
+        </section>
+    </main>
 </body>
 </html>

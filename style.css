@@ -1,0 +1,39 @@
+body {
+    background-color: #F2EDEB;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-family: "BBH Sans Bogle", sans-serif;
+    text-align: center;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.mes-livres h2 {
+    font-family: "BBH Sans Bogle", sans-serif;
+    margin: 0;
+}
+
+.mes-livres_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 1rem 0;
+}
+
+.book_card {
+    background-color: white;
+    border-radius: 8px ;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: inherit;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+}
